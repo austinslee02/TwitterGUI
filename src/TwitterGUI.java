@@ -4,7 +4,7 @@ import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+//Usese java swing to make a GUI for the admin page
 public class TwitterGUI extends JFrame {
     private JTree TreeView;
     private JTextField UserID;
@@ -28,9 +28,11 @@ public class TwitterGUI extends JFrame {
     private DefaultMutableTreeNode node;
     public TwitterGUI() {
         add(AdminView);
+        //Singleton initializations
         userList = UserList.getInstance();
         messageList = MessageList.getInstance();
         groupList = GroupList.getInstance();
+        //Redefines tree to be empty and editable
         DefaultTreeModel model = (DefaultTreeModel)TreeView.getModel();
         node = (DefaultMutableTreeNode)model.getRoot();
         node.removeAllChildren();

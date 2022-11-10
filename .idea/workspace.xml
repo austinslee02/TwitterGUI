@@ -4,27 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2261c2c9-4a8f-4b10-bff4-52d4ef031b0e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Twitter GUI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CountVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GroupList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MessageList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TwitterGUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TwitterGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserGUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor.java" afterDir="false" />
+    <list default="true" id="2261c2c9-4a8f-4b10-bff4-52d4ef031b0e" name="Changes" comment="Finished TwitterGUI">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GroupList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MessageList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MessageList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TwitterGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwitterGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visitor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +68,14 @@
       <option name="presentableId" value="Default" />
       <updated>1666929191188</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finished TwitterGUI">
+      <created>1668049769917</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668049769917</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,5 +88,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished TwitterGUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished TwitterGUI" />
   </component>
 </project>

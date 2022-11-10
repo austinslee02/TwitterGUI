@@ -1,5 +1,6 @@
 import java.util.ArrayList;
-
+//Class for each user
+//Contains the users ID, who they are following, and their followers
 public class User {
     private String name;
     private ArrayList<User> following;

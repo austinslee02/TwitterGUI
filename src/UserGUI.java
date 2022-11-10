@@ -2,7 +2,8 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
-
+//User GUI for each user
+//Also an observer
 public class UserGUI extends JFrame implements Observer {
     private JButton followUserButton;
     private JTextField FollowUsername;
@@ -23,9 +24,11 @@ public class UserGUI extends JFrame implements Observer {
 
     public UserGUI(Object u) {
         add(UserView);
+        //Singleton initializations
         messageList = MessageList.getInstance();
         userList = UserList.getInstance();
         user = userList.getUser(u.toString());
+        //List models to edit lists
         following = new DefaultListModel();
         messages = new DefaultListModel();
         CurrentFollowing.setModel(following);
@@ -51,7 +54,7 @@ public class UserGUI extends JFrame implements Observer {
             }
         });
     }
-
+    //Update method for observer pattern
     @Override
     public void update(Subject subject) {
         if (subject instanceof MessageList) {

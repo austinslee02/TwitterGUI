@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+//Contains all users
 public class UserList {
     private ArrayList<User> users;
     private static UserList userList;
@@ -10,14 +10,14 @@ public class UserList {
     public void addUser(User u) {
         users.add(u);
     }
-    //Singleton
+    //Singleton pattern
     public static UserList getInstance() {
         if (null == userList) {
             userList = new UserList();
         }
         return userList;
     }
-
+    //Searches list of users for specific user
     public User getUser(String u) {
        for (User x : users) {
            if (x.getName().compareTo(u) == 0) {

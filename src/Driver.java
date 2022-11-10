@@ -1,3 +1,4 @@
+//Main driver to initialize Twitter GUI
 public class Driver {
     public static void main(String[] args) {
         TwitterGUI twitterGUI = new TwitterGUI();
