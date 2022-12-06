@@ -6,7 +6,7 @@ public class UserList {
     private UserList() {
         users = new ArrayList<User>();
     }
-
+    public String lastUpdated;
     public void addUser(User u) {
         users.add(u);
     }
@@ -29,8 +29,13 @@ public class UserList {
     public void accept(Visitor visitor) {
         visitor.visitUsers(this);
     }
-
     public ArrayList<User> getUsers() {
         return users;
+    }
+    public void setLastUpdatedUser(String s) {
+        lastUpdated = s;
+    }
+    public String getLastUpdatedUser() {
+        return lastUpdated;
     }
 }

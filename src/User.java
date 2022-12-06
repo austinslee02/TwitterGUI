@@ -6,12 +6,18 @@ public class User {
     private ArrayList<User> following;
 
     private ArrayList<User> followers;
+    private static long creationTime;
+    private long lastUpdateTime;
     public User(String n) {
         name = n;
         following = new ArrayList<User>();
         followers = new ArrayList<User>();
+        creationTime = System.currentTimeMillis();
+        lastUpdateTime = creationTime;
     }
-
+    public long getTime() { return creationTime;}
+    public long getLastUpdateTime() { return lastUpdateTime;}
+    public void setLastUpdateTime(long t) { lastUpdateTime = t;}
     public String getName() {
         return name;
     }

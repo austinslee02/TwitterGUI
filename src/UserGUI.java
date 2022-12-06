@@ -15,8 +15,9 @@ public class UserGUI extends JFrame implements Observer {
     private JPanel UserView;
     private JLabel NewsFeedLabel;
     private JLabel CurrentFollowingLabel;
+    private JLabel TimeCreated;
+    private JLabel LastUpdateTimeText;
     private User user;
-    private TwitterGUI twitterGUI;
     private UserList userList;
     DefaultListModel following;
     private MessageList messageList;
@@ -35,6 +36,7 @@ public class UserGUI extends JFrame implements Observer {
         NewsFeed.setModel(messages);
         Username.setText("User: " + user.getName());
         messageList.attach(this);
+        TimeCreated.setText("Time: " + user.getTime());
         followUserButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -51,6 +53,9 @@ public class UserGUI extends JFrame implements Observer {
                 messageList.addMessage(TweetMessage.getText(), user);
                 messages.addElement(user.toString() + ": " + TweetMessage.getText());
                 TweetMessage.setText("");
+                user.setLastUpdateTime(System.currentTimeMillis());
+                LastUpdateTimeText.setText("Last Update Time: " + user.getLastUpdateTime());
+                userList.setLastUpdatedUser(user.getName());
             }
         });
     }
